@@ -1,0 +1,32 @@
+Extra work:
+
+I have completed the assignment to the specifications given. All the required files are included in the base Assignment 1 folder.
+
+I have also gone above the requirements and played with some assumptions in the assignment specifications for an A grade.
+
+In the folder labeled Extra, I have included modified versions of the files. The assignment says to assume that input messages are all lowercase characters only, but I changed my ensure that the user cannot break this rule.
+To do this, I implemented a custom exception, which is thrown if the input message is not only lowercase characters.
+
+I believe my extra work is worthy of an A grade.
+
+
+Test information:
+
+
+In CipherTester.java, "Test Encrypt" defines a test input string "themessage" as well as a string of what we would expect it to be encrypted as based on the assignment instructions ("uvfnsttohf").
+
+It then tries calls the encrypt method and compares with the test input string as an argument and confirms that the returned value is the same as the expected encrypted string.
+
+After that it prints whether or not the test passed.
+
+
+
+"Test Decrypt" defines a test input encrypted string "uvfnsttohf" as well as a string of what we would expect it to be decrypted as, which is the same as the input for test encrypt ("themessage").
+
+It then tries calls the encrypt method and compares with the test input string as an argument and confirms that the returned value is the same as the expected encrypted string.
+
+After that it prints whether or not the test passed.
+
+
+
+Before I wrote tests for the encrypt and decrypt methods, I wrote tests for the stringToIntArray and intArrayToString methods, which work in essentially the same way. They define expected input and output and compare the actual output to the expected output. I have commented out these tests because these tests only work if those methods are public, but the assignment specifies that they be private.

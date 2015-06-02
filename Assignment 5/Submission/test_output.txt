@@ -1,0 +1,17 @@
+In BSTRefBased.java, I have six tests to confirm that the functions work as specified by the assignment.
+
+Test 1 and 2 both test insert (by Dr. Zastre).
+
+Test 3 calls retrieve() and confirms that the it correctly returns a WordRefs object with containing the expected String.
+
+Test 4 calls retrieve() and confirms that it works even in trees with different amounts of nodes.
+
+Test 5 calls delete() and confirms that the deleted object is no longer in the tree by checking that calling retrieve returns null.
+
+Test 6 calls delete() and confirms that calling it with a string that is not in the tree does not affect the tree in any way.
+
+Dr. Zastre also included several tests (in01.txt, out01.txt, etc.) for further testing. My implementation passes all his tests.
+
+
+
+As for extra work, I implemented an alternate version of WordRefs and BSTRefBased so that the tree uses integers rather than Strings, thus it can be used to sort numbers.

@@ -1,0 +1,35 @@
+In TaskListTester.java, I wrote 15 tests to confirm that the functions work as specified by the assignment.
+
+Test 1 calls isEmpty() on an empty list and passes because the list is empty.
+
+Test 2 calls getLength() on an empty list expecting 0 and passes because the list is empty.
+
+Test 3 calls calls insert() then getLength() expecting 1 and passes because the list now contains one item.
+
+Test 4 calls retrieve(0) to retrieve the first item in the list and passes because it successfully returns the item inserted in Test 3.
+
+Test 5 calls retrieve(1) to retrieve the second item in the list (which does not exist) and passes because it returns null.
+
+Test 6 calls insert() to add a new item of equal priority to the list and passes because it is inserted in order of arrival.
+
+Test 7 calls insert() to add a higher priority item to the list and passes because it successfully adds it to the head of the list.
+
+Test 8 calls insert() to add a new item of priority 11 (which should go between the items 0 and 1) and passes because it is successfully inserted into the correct position.
+
+Test 9 calls remove() to remove a task which is not in the list and passes because the operation returns null.
+
+Test 10 calls remove() to remove a task from an empty list and passes because it returns null.
+
+Test 11 calls remove() to remove a newly inserted task and passes because it returns the removed task.
+
+Test 12 calls remove() to remove the item of priority 11 inserted in Test 8 and passes because it is successfully removed and the items on either side of it and properly linked after the operation.
+
+Test 13 calls removeHead() on an empty list and passes because it successfully returns null.
+
+Test 14 calls removeHead() and passes because it successfully returns the task which was the head prior to removal.
+
+Test 15 calls removeHead() and passes because it successfully removes the first item from the list.
+
+
+
+Dr. Zastre also included several input and output text files in the assignment (in01.txt, out01.txt, etc.) for use with TaskSchedulerSim.java. The input files give instructions in the form of TA, SC, TD, ST, which call insert(), removeHead(), remove(), and getLength() respectively. Each input file gives different sets of these instructions and the output result is expected the match with the corresponding inputs. My implementation passes each of the input tests by delivering the expected output.

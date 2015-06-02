@@ -1,0 +1,50 @@
+In StringStackRefBased.java, I wrote six tests to confirm that the functions work as specified by the assignment.
+
+Test 1 calls isEmpty() on an empty stack expecting it to return true.
+
+Test 2 calls push() and checks that the pushed item was properly placed at the top of the stack.
+
+Test 3 calls isEmpty() on a stack with one item in it expecting it to return false.
+
+Test 4 calls pop() and checks that only the top item of the stack was properly removed.
+
+Test 5 calls popAll() and checks that the stack is empty after the method call.
+
+Test 6 calls peek() and confirms that the returned item is the one at the top of the stack.
+
+
+
+To test EvalInfix.java, I ran it through the terminal uses the following commands to produce the following correct results.
+
+java EvalInfix "1 + 1"
+2
+
+java EvalInfix "1 - 1"
+0
+
+java EvalInfix “5 * 1"
+5
+
+java EvalInfix “10 / 2”
+5
+
+java EvalInfix "1 + a”
+<noninteger>
+
+java EvalInfix “1.5 + 1”
+<noninteger>
+
+java EvalInfix "1 + 1 -“
+<syntax error>
+
+java EvalInfix "1 + 1)“
+<unbalanced ()>
+
+java EvalInfix “1 / 0”
+<division by zero>
+
+
+
+Dr. Zastre also included testcases.txt and results.txt for use with EvalInfix.java. My implementation passes all his tests.
+
+As for extra work, I implemented StringStackRefBasedExtra.java. This extra class implements the string stack used in EvalInfix.java using the library java.util.LinkedList.
